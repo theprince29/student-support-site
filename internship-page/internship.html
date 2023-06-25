@@ -1,1 +1,590 @@
 <!-- write Your code here -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.jpg">
+    <link rel="stylesheet" href="css/internship-style.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Serif:ital@1&family=Tangerine:wght@700&display=swap"
+        rel="stylesheet">
+    <!-- icons -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <title>Internships_Corner</title>
+</head>
+
+<body>
+    <!------------------------------------------- navbar ------------------------------------------>
+    <nav class="navbar">
+        <h2 class="navbar-logo"><a href="#">Website_Name</a></h2>
+        <div class="navbar-menu">
+            <a href="#jobs">Jobs</a>
+            <a href="#companies">Companies</a>
+            <a href="#testimoni">Testimonial</a>
+            <a href="#blog">Blogs</a>
+        </div>
+        <div class="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+    <!---------------------------------------- banner ----------------------------------------------------->
+    <div class="banner">
+        <div class="box">
+            <img src="https://source.unsplash.com/1200x500/?internship,jobs,office,companies" alt="background-images">
+        </div>
+        <!-- <hr class="divider"> -->
+        <!-- <h1 class="header-title"> -->
+        <div class="main">
+            <h1>Find Your,</h1>
+            <h5>Perfect </h5>
+            <ul class="option">
+                <li><span style="font-family: 'Noto Serif', serif;">Jobs</span></li>
+                <li><span style="font-family: 'Noto Serif', serif;">Internships</span></li>
+                <li><span style="font-family: 'Noto Serif', serif;">Hackthons</span></li>
+                <li><span style="font-family: 'Noto Serif', serif;">Internships</span></li>
+            </ul>
+            <h2>Easily.</h2>
+        </div>
+        <!-- Find Your<br> <span>Perfect Internships</span> <br>Easily -->
+        <!-- </h1> -->
+    </div>
+    <section class="search-area">
+        <!----------------------------------------- search ----------------------------------------------------------->
+        <div class="search-wrapper">
+            <div class="search-box">
+                <div class="search-card">
+                    <input class="search-input" type="text" name="search"
+                        placeholder="Search internships like Keywords...">
+                    <button class="search-button" type="button" onclick="filterSelection('all')">Search</button>
+                </div>
+            </div>
+        </div>
+        <!------------------------------------------------ filter box -------------------------------------------------- -->
+
+
+        <div class="filter-box">
+            <h2>Apply Suitable Filter to Customized your Search</h2>
+            <hr class="divider">
+            <div id="myBtnContainer" class="chosen-card">
+                <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+                <button class="btn" onclick="filterSelection('Onsite')">Onsite/Remote<i
+                        class="fas fa-times-circle"></i></button>
+                <button class="btn" onclick="filterSelection('virtual')">Online/Virtual<i
+                        class="fas fa-times-circle"></i></button>
+                <button class="btn" onclick="filterSelection('Stipened')"> Stipend<i
+                        class="fas fa-times-circle"></i></button>
+                <button class="btn" onclick="filterSelection('Unpaid')">Un-Stipend<i
+                        class="fas fa-times-circle"></i></button>
+            </div>
+        </div>
+        <!-- ----------------------------------------------------------------------------- -->
+        <div class="tag">
+            <h1>Lists of Jobs/Internships in Year 2023-24</h1>
+        </div>
+    </section>
+    <!-------------------------------------- jobs listing ------------------------------------------->
+    <section class="job-list" id="jobs">
+        <h3 style="margin-left: 10px; font-family: 'Noto Serif', serif ;">Recent Updates :-- </h3>
+        <div class="container">
+            <div class="filterDiv Onsite" data-aos="flip-down">
+                <div class="job-card">
+                    <div class="job-name">
+                        <img class="job-profile" src="images/tcs.jfif" alt="TCS">
+                        <div class="job-detail">
+                            <h4>TCS</h4>
+                            <h3>JAVA Developer - PAN INDIA <span style="padding-left: 30px;">
+                            </h3>
+                            <p>TCS is hiring JAVA Developers for PAN India Location.Experience: 2 to 6 years (Excluding
+                                Internship Exp)</p>
+                        </div>
+                    </div>
+                    <div class="job-label">
+                        <a class="label-a" href="#">Onsite</a>
+                        <a class="label-b"
+                            href="https://in.linkedin.com/jobs/view/java-developer-pan-india-at-tata-consultancy-services-3454632109?refId=pabGYCSejQK1l%2BScG7Kfkw%3D%3D&trackingId=ghNcybfri1Oh%2BKVyn8Ty0A%3D%3D&trk=public_jobs_topcard-title">Apply</a>
+                        <a class="label-c" href="#"></a>
+                    </div>
+                    <div class="job-posted">
+                        posted 1 week ago
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="filterDiv Onsite Unpaid" data-aos="flip-down">
+                <div class="job-card">
+                    <div class="job-name">
+                        <img class="job-profile" src="images/netleap.jpeg" alt="google">
+                        <div class="job-detail" id="j">
+                            <h4>NETLEAP IT TRAINING ND SOLUTIONS</h4>
+                            <h3>WEB DEVELOPMENT INTERNSHIP PROGRAM</h3>
+                            <p>In a web developer internship, you work with professional developers, designers, and
+                                project managers to support the development of a website and learn the skills of the
+                                trade.</p>
+                        </div>
+                    </div>
+                    <div class="job-label">
+                        <a class="label-a" href="#">Unstipend</a>
+                        <a class="label-b"
+                            href="https://internship.aicte-india.org/internship-details.php?uid=INTERNSHIP_167600526663e5cf92361da">Apply
+                            By</a>
+                        <a class="label-c" href="#">13-02-2023</a>
+                    </div>
+                    <div class="job-posted">
+                        Duration - 2 months
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="filterDiv Stipened Onsite" data-aos="flip-down">
+                <div class="job-card">
+                    <div class="job-name">
+                        <img class="job-profile" src="images/tulip.png" alt="tulip">
+                        <div class="job-detail">
+                            <h4>Vadodara Smart City Development Limited</h4>
+                            <h3>SOFTWARE ENGINEER (INTERN)</h3>
+                            <p>Only those candidates can apply who are from B.Tech. / B.E./ Equivalent,MCA,</p>
+                        </div>
+                    </div>
+                    <div class="job-label">
+                        <a class="label-a" href="#">Stipend(10950/month)</a>
+                        <a class="label-b"
+                            href="https://internship.aicte-india.org/internship-details.php?uid=INTERNSHIPGOV_167542575663dcf7dcae348&level=2">Apply
+                            By</a>
+                        <a class="label-c" href="#">18-02-2023</a>
+                    </div>
+                    <div class="job-posted">
+                        Duration-2 months
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="filterDiv Onsite" data-aos="flip-down">
+                <div class="job-card">
+                    <div class="job-name">
+                        <img class="job-profile" src="images/adobe.jfif" alt="Adobe">
+                        <div class="job-detail">
+                            <h4>Adobe</h4>
+                            <h3>Project Manager - SheSparks Intern</h3>
+                            <p>SheSpark- Adobe's Women Returnee Internship program is an initiative of Adobe to help
+                                women employees who are on a break for personal reasons and want to join the
+                                workforce.This is a 6-month internship for experienced candidates returning to the
+                                workforce.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="job-label">
+                        <a class="label-a" href="#">Stipend</a>
+                        <a class="label-b"
+                            href="https://in.linkedin.com/jobs/view/project-manager-%E2%80%93-shesparks-intern-at-adobe-3462381181?refId=efoQp3XNvFPEYekCEK3dvQ%3D%3D&trackingId=47yRM7ijQguUnqrO6Xq0FA%3D%3D&trk=public_jobs_topcard-title">Apply</a>
+                        <a class="label-c" href="#"></a>
+                    </div>
+                    <div class="job-posted">
+                        Duration- 6 months
+                    </div>
+                </div>
+            </div>
+
+            <span class="more-job">
+                <div class="filterDiv Onsite" data-aos="flip-up">
+                    <div class="job-card">
+                        <div class="job-name">
+                            <img class="job-profile" src="images/baker.jfif" alt="microsoft">
+                            <div class="job-detail">
+                                <h4>Baker Hughes</h4>
+                                <h3>Summer Internships 2023 (India)</h3>
+                                <p>The Baker Hughes Internship is designed to enable undergraduates pursing a Bachelors
+                                    or Masters degree to gain hands-on work experience as the foundation of their
+                                    professional lives.These internships duration are 6-11 months.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="job-label">
+                            <a class="label-a" href="#">Stipend</a>
+                            <a class="label-b"
+                                href="https://careers.bakerhughes.com/global/en/job/BAHUGLOBALR64006/Summer-Internships-2023-India?utm_source=linkedin&utm_medium=phenom-feeds">Apply</a>
+                            <a class="label-c" href="#"></a>
+                        </div>
+                        <div class="job-posted">
+                            Duration- 6-11 months
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="filterDiv Stipened virtual" data-aos="zoom-in-up">
+                    <div class="job-card">
+                        <div class="job-name">
+                            <img class="job-profile" src="images/smart.png" alt="SMARTBRIDGE">
+                            <div class="job-detail">
+                                <h4>SMARTBRIDGE EDUCATIONAL SERVICES PRIVATE LIMITED</h4>
+                                <h3>GOOGLE SUPPORTED VIRTUAL INTERNSHIP PROGRAM</h3>
+                                <p>SmartBridge in collaboration with Google and AICTE, has launched this virtual
+                                    internship program to impart Android application development in Kotlin programming
+                                    language to 5000+ students across India.</p>
+                            </div>
+                        </div>
+                        <div class="job-label">
+                            <a class="label-a" href="#">Stipend</a>
+                            <a class="label-b"
+                                href="https://internship.aicte-india.org/internship-details.php?uid=INTERNSHIP_1654499134629da73e88342">Apply
+                                By</a>
+                            <a class="label-c" href="#">31-03-2023</a>
+                        </div>
+                        <div class="job-posted">
+                            Duration- 8 weeks
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="filterDiv Unpaid virtual" data-aos="zoom-in-up">
+                    <div class="job-card">
+                        <div class="job-name">
+                            <img class="job-profile" src="images/ad.jpg" alt="AD Infocom">
+                            <div class="job-detail">
+                                <h4>AD Infocom Systems</h4>
+                                <h3>ARTIFICIAL INTELLIGENCE AND MACHINE LEARNING</h3>
+                                <p>AICTE Approved - AD Infocom Systems Internship Program Greetings from AD Infocom
+                                    Systems AD Infocom Systems is software based company which works in the area of
+                                    various IT services like web development, app development, software development,
+                                    Matlab coding, NS2 coding, etc.</p>
+                            </div>
+                        </div>
+                        <div class="job-label">
+                            <a class="label-a" href="#">Unstipend</a>
+                            <a class="label-b"
+                                href="https://internship.aicte-india.org/internship-details.php?uid=INTERNSHIP_167567500363e0c57bea55b">Apply
+                                By</a>
+                            <a class="label-c" href="#">28-02-2023</a>
+                        </div>
+                        <div class="job-posted">
+                            Duration - 6 months
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="filterDiv Stipened Onsite" data-aos="zoom-in-up">
+                    <div class="job-card">
+                        <div class="job-name">
+                            <img class="job-profile" src="images/kits.png" alt="KITS CART">
+                            <div class="job-detail">
+                                <h4>KITS CART RESEARCH LABS PRIVATE LIMITED</h4>
+                                <h3>PYTHON PROGRAMMING</h3>
+                                <p>Selected candidates will undergo internship training for 30 days with live project.
+                                    Each and every topic will be explained clearly with programs. After completion of
+                                    every topic student have to clear the online test through our android mobile app.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="job-label">
+                            <a class="label-a" href="#">Stipend(3000/month)</a>
+                            <a class="label-b"
+                                href="https://internship.aicte-india.org/internship-details.php?uid=INTERNSHIP_167228171063acfe6ee84a1">Apply
+                                By</a>
+                            <a class="label-c" href="#">31-05-2023</a>
+                        </div>
+                        <div class="job-posted">
+                            Duration - 2 months
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="filterDiv Stipened Onsite" data-aos="zoom-in-up">
+                    <div class="job-card">
+                        <div class="job-name">
+                            <img class="job-profile" src="images/young.jpg" alt="YoungMinds">
+                            <div class="job-detail">
+                                <h4>YoungMinds Technology Solutions Pvt. Ltd.</h4>
+                                <h3>DATA SCIENCE, AI, ML INTERN</h3>
+                                <p>YoungMinds Technology Solutions Pvt Ltd is looking for full time interns for Tirupati
+                                    location and all pursuing graduates are eligible Developing end-to-end application
+                                    with latest technologies like python, Django, MySQL and using Python Libraries.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="job-label">
+                            <a class="label-a" href="#">Stipend(8000/month)</a>
+                            <a class="label-b"
+                                href="https://internship.aicte-india.org/internship-details.php?uid=INTERNSHIP_1671287777639dd3e1a069a">Apply
+                                By</a>
+                            <a class="label-c" href="#">28-04-2023</a>
+                        </div>
+                        <div class="job-posted">
+                            Duration - 6 months
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="filterDiv Stipened virtual" data-aos="zoom-in-up">
+                    <div class="job-card">
+                        <div class="job-name">
+                            <img class="job-profile" src="images/postulate.png" alt="POSTULATE">
+                            <div class="job-detail">
+                                <h4>POSTULATE INFO TECH PRIVATE LIMITED</h4>
+                                <h3>DATA SCIENCE INTERN VIRTUAL</h3>
+                                <p>Data Science is one of the most in-demand skill sets that companies are constantly
+                                    hiring for. This Skill Path will teach you the fundamentals of cleaning and
+                                    analyzing, and Visualizing data responsibly, and prepare you for a career in data.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="job-label">
+                            <a class="label-a" href="#">Stipend(5000/month)</a>
+                            <a class="label-b"
+                                href="https://internship.aicte-india.org/internship-details.php?uid=INTERNSHIP_16694477876381c06b29439">Apply
+                                By</a>
+                            <a class="label-c" href="#">30-04-2023</a>
+                        </div>
+                        <div class="job-posted">
+                            Duration - 3 months
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="filterDiv Stipened virtual" data-aos="zoom-in-up">
+                    <div class="job-card">
+                        <div class="job-name">
+                            <img class="job-profile" src="images/gsoc.png" alt="Google">
+                            <div class="job-detail">
+                                <h4>Google</h4>
+                                <h3>Google Summer of Code(GSOC-2023)</h3>
+                                <p>Google Summer of Code is a global, online program focused on bringing new
+                                    contributors into open source software development.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="job-label">
+                            <a class="label-a" href="#">Stipend</a>
+                            <a class="label-b" href="https://summerofcode.withgoogle.com/">See More</a>
+                            <a class="label-c" href="#"></a>
+                        </div>
+                        <div class="job-posted">
+                            Duration - 12+ Weeks
+                        </div>
+                    </div>
+                </div>
+            </span>
+        </div>
+        <button class="job-more">Show-More</button>
+    </section>
+
+    <!----------------------------------------------------- join ------------------------------------------->
+    <section class="join">
+        <div class="join-detail">
+            <h1 class="section-title">Lets Ends Your Searchs for Internships Here.</h1>
+            <p>This Websites provides a List of internships or Jobs Related to more specifically B.Tech Computer Science
+                Stream Students.This will includes a List of Stipened or Unstipened internships.</p>
+        </div>
+        <button class="join-button">START NOW</button>
+    </section>
+
+    <!---------------------------------------- featured companies ---------------------------------------------->
+    <section class="featured" id="companies">
+        <h1 class="section-title">Hackthons</h1>
+        <p>Here We Pinned Some Hackthons,Specially interview preparation purpose in top Companies(from unstop
+            website)where you also apply for the same.For Detail information Please Refer on that
+            website by clicking on the View. </p>
+        <div class="featured-wrapper">
+            <div class="faetured-card">
+                <img class="featured-image" src="images/flipcart.webp" alt="flipcart">
+                <p>Flipkart- Prepare for the interview!</p>
+                <hr class="divider">
+                <a class="featured-button" style="top: 20px;"
+                    href="https://unstop.com/hackathons/flipkart-prepare-for-the-interview-unstop-5dayinterviewprep-flipkart-601359">
+                    View </a>
+            </div>
+
+            <div class="faetured-card">
+                <img class="featured-image" src="images/facebook.webp" alt="facebook">
+                <p>Facebook (Meta) - Prepare for the interview!</p>
+                <hr class="divider">
+                <a class="featured-button"
+                    href="https://unstop.com/hackathons/facebookmeta-prepare-for-the-interview-unstop-5dayinterviewprep-meta-585682">View</a>
+            </div>
+
+            <div class="faetured-card">
+                <img class="featured-image" src="images/amazon.png" alt="Amazon">
+                <p>Amazon - Prepare for the interview!</p>
+                <hr class="divider">
+                <a class="featured-button"
+                    href="https://unstop.com/hackathons/amazon-prepare-for-the-interview-unstop-5dayinterviewprep-amazon-584131">View</a>
+            </div>
+
+            <div class="faetured-card">
+                <img class="featured-image" src="images/google.webp" alt="Google">
+                <p>Google - Prepare for the interview!</p>
+                <hr class="divider">
+                <a class="featured-button"
+                    href="https://unstop.com/hackathons/google-prepare-for-the-interview-unstop-5dayinterviewprep-google-597367">View</a>
+            </div>
+        </div>
+    </section>
+    <!-------------------------------------------- testimoni ------------------------------------------------->
+    <section class="testimoni" id="testimoni">
+        <h1 class="section-title">Testimonial</h1>
+        <p>Lets See What Successful Personalities say about Internships</p>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <i class="fas fa-quote-left"></i>
+                    <h3>The only way to do great work is to love what you do. If you haven’t found it yet, keep looking.
+                        Don’t settle. As with all matters of the heart, you’ll know when you find it.</h3>
+                    <div class="testimoni-pic">
+                        <img src="images/steve.jfif" alt="testimonial-pic">
+                        <p>Steve Jobs</p>
+                        <span> CEO of Apple</span>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <i class="fas fa-quote-left"></i>
+                    <h3>Everyone wants to be a stylist. If you know that’s your calling, then you need to intern as much
+                        as humanly possible.</h3>
+                    <div class="testimoni-pic">
+                        <img src="images/Rachel.jfif" alt="testimonial-pic">
+                        <p>Rachel Zoe</p>
+                        <span>American fashion designer</span>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <i class="fas fa-quote-left"></i>
+                    <h3>Internships are very important part of our education program, first and foremost. In setting up
+                        professional internships, not only will we be able to offer students a chance to work with
+                        industry professionals, but the students also will be able to take the theory they learn in the
+                        classroom and put it into practice here, in whichever activity they’re focused.
+                    </h3>
+                    <div class="testimoni-pic">
+                        <img src="images/craig.jfif" alt="testimonial-pic">
+                        <p>Craig Miller</p>
+                        <span> CEO of Ruth's Chris Steak House.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <!------------------------------------------------- blog ---------------------------------------------------->
+    <section class="blog" id="blog">
+        <h1 class="section-title">Career Advices</h1>
+        <p>Learn More Career tips from Company's recruiters</p>
+        <div class="blog-wrapper">
+            <div class="blog-card">
+                <img class="blog-image" src="images/blog-1.jpg" alt="blogs-1">
+                <div class="blog-detail">
+                    <span>11 Apr 2022</span>
+                    <h4 style="color: blue;">How to Enjoy Your Work</h4>
+                    <p>One way to find enjoyment in your work is to look for employment that is compatible with your
+                        life and career goals. If your current job is not in alignment with what you most enjoy doing,
+                        you are going to be more easily discouraged and dissatisfied with your work.</p>
+                    <hr class="divider">
+                    <a href="https://www.indeed.com/career-advice/career-development/how-to-enjoy-work"
+                        class="blog-more">Read More</a>
+                </div>
+            </div>
+
+            <div class="blog-card">
+                <img class="blog-image" src="images/blog-2.jpg" alt="blogs-2">
+                <div class="blog-detail">
+                    <span>13 Mar 2022</span>
+                    <h4 style="color: blue;">Tips For Technical interview</h4>
+                    <p>Job Interviews can be considered as the new normal in the recruitment world. Indeed, various
+                        leading employers like Google, Microsoft, Amazon, etc. are using online job interviews for their
+                        recruitment process. Moreover, Online Interview seems to be quite comfortable for job seekers as
+                        they can attend the interview right from their home or any other preferred place. </p>
+                    <hr class="divider">
+                    <a href="https://www.geeksforgeeks.org/7-best-tips-to-prepare-for-online-job-interviews/?ref=lbp"
+                        class="blog-more">Read More</a>
+                </div>
+            </div>
+
+            <div class="blog-card">
+                <img class="blog-image" src="images/blog-3.png" alt="blogs-3">
+                <div class="blog-detail">
+                    <span>24 Aug 2022</span>
+                    <h4 style="color: blue;">How to Managing time Effectively</h4>
+                    <p>We all have 24-hours in a day. But, why does it seem that some people are able to get the most
+                        out of every minute of the day? Believe it or not, they don’t have the power to slow down time.
+                        They do, however, know how to properly manage their time.
+                        Want to know how you can become a master of time management as well?</p>
+                    <hr class="divider">
+                    <a href="https://www.forbes.com/sites/johnrampton/2018/05/01/manipulate-time-with-these-powerful-20-time-management-tips/?sh=622caf8857ab"
+                        class="blog-more">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--------------------------------------------- footer--------------------------------------------------->
+    <footer>
+        <div class="footer-wrapper">
+            <h3>Website_Name</h3>
+            <p><span style="font-weight: bold; color: black;">Disclaimer - </span> This Website does not
+                Promoting/Advertising any Company or Website.We just only Provide
+                informations regarding jobs and internships every-year posted by Tech-Companies.</p>
+            <div class="social-media">
+                <a href="https://www.facebook.com/csjmuknp/"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/CSJM_University?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i
+                        class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/theprince29"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <div class="footer-wrapper">
+            <h4>Explore</h4>
+            <a href="#companies">Top Companies</a>
+            <a
+                href="https://unstop.com/hackathons?oppstatus=open&eligible=students:engineering%20students&category=programming:data%20science">Hackthons</a>
+            <a href="https://careers.google.com/jobs/results/">Careers</a>
+        </div>
+        <div class="footer-wrapper">
+            <h4>About</h4>
+            <a href="#">FAQ</a>
+            <a href="#testimoni">Get Inspired</a>
+            <a href="#blog">Blog</a>
+        </div>
+        <div class="footer-wrapper">
+            <h4>Support</h4>
+            <a href="#">Feedback</a>
+        </div>
+        <div class="footer-wrapper">
+            <h4>Community</h4>
+            <a href="https://discord.gg/YpQGtavk">Community</a>
+            <a href="https://web.whatsapp.com/">Invite a Friend</a>
+            <!-- <a href="#">Event</a> -->
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="javascript/internship-index.js"></script>
+
+    <!------------------------- Adding AOS-Library javascript------------------------------------------ -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 120,
+            duration: 3000,
+        });
+    </script>
+    <!-- ---------------------------------------------------------------------------------------------- -->
+
+</body>
+
+</html>
