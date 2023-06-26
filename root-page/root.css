@@ -259,11 +259,12 @@ button {
 .container h4 {
     position: relative;
     color: #03e9f4;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     font-size: 4em;
     font-family: 'Playfair Display', serif;
     animation: typing 8s steps(8) infinite;
     overflow: hidden;
+    text-transform: uppercase;
 }
 
 @keyframes typing {

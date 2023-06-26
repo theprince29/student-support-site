@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="images/favicon.jpg">
-    <link rel="stylesheet" href="css/internship-style.css">
+    <link rel="stylesheet" href="internshp.css">
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,13 +18,16 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-    <title>Internships_Corner</title>
+    <title>Internships Corner</title>
 </head>
 
 <body>
+    <div id="preloader">
+        <h3>Loading...</h3>
+    </div>
     <!------------------------------------------- navbar ------------------------------------------>
     <nav class="navbar">
-        <h2 class="navbar-logo"><a href="#">Website_Name</a></h2>
+        <h2 class="navbar-logo"><a href="/root-page/root.html">THINK-AI</a></h2>
         <div class="navbar-menu">
             <a href="#jobs">Jobs</a>
             <a href="#companies">Companies</a>
@@ -574,7 +577,14 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script src="javascript/internship-index.js"></script>
+    <!-- preloder -->
+    <script>
+        var loader = document.getElementById("preloader");
 
+        window.addEventListener("load", function () {
+            loader.style.display = "none";
+        })
+    </script>
     <!------------------------- Adding AOS-Library javascript------------------------------------------ -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
