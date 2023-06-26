@@ -133,6 +133,7 @@
     align-items: center;
     justify-content: space-between;
     position: absolute;
+    z-index: 100;
 }
 
 .container {
@@ -214,6 +215,7 @@
     padding-bottom: 20px;
     font-weight: bolder;
     font-size: large;
+    text-align: left;
     /* line-height: 3px; */
     
 }
@@ -227,10 +229,11 @@
     display: inline;
 }
 
-.sec-context1 h4{
+.sec-context1 p{
     font-weight: bolder;
     font-size: large;
     padding-left: 50px;
+    text-align: left;
 }
 .sec-context1 h3{
     padding-bottom: 20px;
@@ -295,6 +298,7 @@ hr{
 .team-mem{
     margin: 8px;
     padding-left: 40px;
+    text-decoration: none;
 }
 img{
     width: 100px;
