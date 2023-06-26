@@ -1,19 +1,321 @@
-.container{
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+/* -----------------------------Adding-Preloader------------------------------------------------- */
+#preloader {
+    background: black url(images/preloader.gif) no-repeat center center;
+    background-size: 15%;
+    /* background-size: cover; */
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+#preloader h3 {
+    place-items: center;
+    letter-spacing: 3px;
+    margin-left: 45%;
+    margin-top: 28%;
+    color: white;
+    font-family: 'Noto Serif', sans-serif;
+    font-size: 16px;
+}
+
+/* ---------------------------------------------------------------------------------------------- */
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.back-video {
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* bottom: 0; */
+    z-index: -1;
+    opacity: 98%;
+    height: 100%;
+}
+
+.back1-video{
+    position: absolute;
+    top: 114.645%;
+    z-index: -1;
+    opacity: 96%;
+    border: none;
+    overflow: hidden;
+    rotate : 180deg;
+}
+@media (min-aspect-ratio: 16/9) {
+    .back-video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .back-video {
+        width: auto;
+        height: 100%;
+    }
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .back1-video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .back1-video {
+        width: auto;
+        height: 100%;
+    }
+}
+
+.about{
+    position: absolute;
+    justify-content: space-between;
+    top: 30%;
+    left: 30%;
+    color: #fff;
+    
+}
+.about h1{
+    left: 15%;
+    font-family: 'Noto Serif', serif;
+    letter-spacing: 3px;
+    line-height: 40px;
+    position: relative;
+    font-size: 46px;
+    /* mix-blend-mode: multiply; */
+}
+.about p{
+    padding: 0;
+    justify-content: center;
+    letter-spacing: 4px;
+    line-height: 50px;
+    font-size: 20px;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
+
+.navbar h3 {
+    color: white;
+    left: 0;
+    padding-right: 85%;
+    font-family: 'Tangerine', cursive;
+    font-size: 32px;
+    /* position: absolute; */
+    /* padding-top: 50px; */
+}
+
+.navbar {
+    width: 85%;
+    height: 15%;
+    margin: auto;
+    left: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+}
+
+.container {
+    position: absolute;
+    left: 5%;
+    font-size: 5px;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0002);
+}
+
+.container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1px;
+    height: 100%;
+    background: #03e9f4;
+    animation: blinkCursor 0.8s steps(3) infinite;
+}
+
+@keyframes blinkCursor {
+
+    0%,
+    75% {
+        opacity: 1;
+    }
+
+    76%,
+    100% {
+        opacity: 0;
+    }
+}
+
+.container h4 {
+    position: relative;
+    color: #03e9f4;
+    letter-spacing: 3px;
+    font-size: 4em;
+    font-family: 'Playfair Display', serif;
+    animation: typing 8s steps(8) infinite;
+    overflow: hidden;
+}
+
+@keyframes typing {
+
+    0%,
+    90%,
+    100% {
+        width: 0;
+    }
+
+    30%,
+    60% {
+        width: 114.11px;
+    }
+}
+
+/* ---------------------------------------------------------------------------------- */
+.sec-context{
+    position: absolute;
+    top: 80%;
+    left: 25%;
+    color: #fff;
+    display: inline-block;
+    /* transform: translate3d(0px, -221.383px, 0px); */
+}
+
+.sec-context h3{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 32px;
+    color: whitesmoke
+}
+.sec-context h4{
+    padding-right: 25%;
+    padding-top: 10%;
+    font-size: large;
+}
+.sec-context p{
+    padding-bottom: 20px;
+    font-weight: bolder;
+    font-size: large;
+    /* line-height: 3px; */
+    
+}
+
+.sec-context1{
+    position: absolute;
+    left: 5%;
+    top: 145%;
+    transform: translate3d(0px, -350.61px, 0px);
+    color: #fff;
+    display: inline;
+}
+
+.sec-context1 h4{
+    font-weight: bolder;
+    font-size: large;
+    padding-left: 50px;
+}
+.sec-context1 h3{
+    padding-bottom: 20px;
+    font-weight: bolder;
+    line-height: 3px;
+    font-size: 32px;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+.divider {
+    /* top: 400px; */
+    position: absolute;
+    top: 113%;
+    /* margin: 2rem 0; */
+    margin-left: 15%;
+    /* padding-left: 30%; */
+    width: 70%;
+    /* height: 0; */
+    border: 0.3px solid white;
+    /* justify-content: center; */
+}
+/* ------------------------------------------------------------------------------------ */
+
+
+/* Google Font */
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap'); */
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
+    background: linear-gradient(#D5A3FF 0%, #77A5F8 100%);
+} */
+.wrapper{
+    position: absolute;
+    top: 175%;
+    left: 30%;
+    background: #fff;
+    width: 580px;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.4);
+    opacity: 60%;
 }
-
 h2{
-    font-size:5rem;
-    color:black;
-    font-family: sans-serif;
-    letter-spacing: 10px;
-    text-transform: uppercase;
+    text-align: center;
+}
+hr{
+    width: 100px;
+    margin: 10px auto;
+}
+.members{
+    display: flex;
+}
+.team-mem{
+    margin: 8px;
+    padding-left: 40px;
+}
+img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 10px;
+}
+h4,p{
+    text-align: center;
+    font-size: 12px;
+    margin: 7px;
 }
 
-body
-{
-    background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+
+/* .container1{
+    width: 100%;
+    height: 100vh;
+    position: relative;
 }
+
+.container1 video{
+    width: 100%;
+    height: 100%;
+} */
