@@ -1,17 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
     <link rel="icon" href="images/favicon.jpg">
     <link rel="stylesheet" href="about.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Serif:ital@1&family=Playfair+Display&family=Poppins:ital@1&family=Tangerine:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>THINK-AI</title>
 </head>
+
 <body>
-    <div class="container">
-        <h2>
-            Under construction!
-        </h2>
+    <div id="preloader">
+        <h3>Loading...</h3>
     </div>
+    <div class="navbar">
+        <img class="logo" src="images/logo.png" alt="logo">
+        <div class="container">
+            <h4>Think_AI</h4>
+        </div>
+        <!-- <button type="button">Sign-up</button> -->
+    </div>
+    <div class="hero">
+        <video autoplay loop muted plays-inline class="back-video">
+            <source src="images/future.mp4" type="video/mp4">
+        </video>
+        <video autoplay loop muted plays-inline class="back1-video">
+            <source src="images/future.mp4" type="video/mp4">
+        </video>
+    </div>
+    <hr class="divider">
+    <div class="about">
+        <h1 data-aos="flip-down">About Think-AI</h1>
+        <p data-aos="flip-down">The place where all real-time magic happens</p>
+    </div>
+
+
+    <div class="sec-context" data-aos="flip-down">
+        <h3>Who we are</h3>
+        <p>We are a passionate team of professionals dedicated to providing exceptional
+            <br>resources and opportunities for engineering students <br> in the field of coding and competitive
+            programming.
+        </p>
+        <h4>Join us on this exciting journey as we work together to shape the future of coding
+            and help engineering students reach their full potential.</h4>
+    </div>
+
+    <div class="sec-context1" data-aos="flip-down">
+        <h3>What we do</h3>
+        <h4>Our platform offers a vast collection of resources, including
+            tutorials, articles, videos, and practice problems,<br> covering a wide range of programming languages,
+            algorithms, and data structures. <br> No matter what your area of interest or expertise, you'll find
+            valuable
+            content tailored to your needs.</h4>
+    </div>
+
+    <div class="wrapper">
+        <h2>Executive Team</h2>
+        <hr>
+        <div class="members">
+            <div class="team-mem">
+                <img src="images/prince.png">
+                <h4>Prince</h4>
+                <p>CSE-AI(Student)</p>
+            </div>
+            <div class="team-mem">
+                <img src="images/yuvraj.png">
+                <h4>Yuvraj</h4>
+                <p>CSE-AI(Student)</p>
+            </div>
+            <div class="team-mem">
+                <img src="images/shivam.png">
+                <h4>Shivam</h4>
+                <p>CSE-AI(Student)</p>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <!------------------------- Adding AOS-Library javascript------------------------------------------ -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 50,
+            duration: 3000,
+        });
+    </script>
+    <!-- ---------------------------------------------------------------------------------------------- -->
+    <script>
+        var loader = document.getElementById("preloader");
+
+        window.addEventListener("load", function () {
+            loader.style.display = "none";
+        })
+    </script>
+    <script>
+        var navbarHeight = $(".drag-container").outerHeight();
+        $(".drag-container .spin-container img").click(function (e) {
+            var targetHref = $(this).attr("href");
+            $("html,body").animate({
+                scrollTop: $(targetHref).offset().top - navbarHeight
+
+            }, 3000)
+            e.preventDefault();
+        });
+    </script>
+
 </body>
+
 </html>
