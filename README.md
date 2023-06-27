@@ -7,7 +7,7 @@ Tools Used
 
 <h3> The THINK AI project is built using the following technologies:</h3>
 
-HTML: Used for structuring web pages.
+HTML: Used for structuring web pages. <br>
 CSS: Used for styling the user interface and layout.
 JavaScript: Used for implementing interactive features and functionality.
 
