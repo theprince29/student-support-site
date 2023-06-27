@@ -1,4 +1,4 @@
-#THINK AI
+<h1> THINK AI</h1>
 
 Welcome to the THINK AI project! This project aims to provide a centralized platform for accessing valuable resources, internship opportunities, and articles related to coding and programming.
 Project Description
