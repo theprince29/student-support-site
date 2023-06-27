@@ -5,14 +5,14 @@ Project Description
 THINK AI is a web-based platform that serves as a comprehensive resource hub for individuals interested in artificial intelligence, machine learning, and computer science. It offers a curated collection of resources, internship listings, and insightful articles to help users stay updated with the latest trends and advancements in the field.
 Tools Used
 
-###The THINK AI project is built using the following technologies:
+<h3> The THINK AI project is built using the following technologies:</h3>
 
 HTML: Used for structuring web pages.
 CSS: Used for styling the user interface and layout.
 JavaScript: Used for implementing interactive features and functionality.
 
 
-##Technical Details
+<h2>Technical Details</h2>
 
 The project consists of the following main components:
 
@@ -21,7 +21,7 @@ about-page: The page that offers information about the project and its mission.
 internship-pages: The page dedicated to showcasing internship opportunities and job listings.
 artical-pages: The page containing a collection of articles and blog posts related to coding and programming.
 
-##Contribution Guidelines
+<h2>Contribution Guidelines</h2>
 
 
 We welcome contributions to the THINK AI project! If you would like to contribute, please follow these guidelines:
@@ -31,7 +31,7 @@ Make your modifications, ensuring that they align with the project's objectives.
 Test your changes thoroughly.
 Submit a pull request, providing a clear description of the changes you have made and their benefits to the project.
 
-###License
+<h3>License</h3>
 The THINK AI project is released under the MIT License. Feel free to modify and distribute it according to the terms of the license.
 Contact Information
 
