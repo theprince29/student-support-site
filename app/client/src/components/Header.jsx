@@ -10,7 +10,6 @@ function Header() {
             class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
           >
             <svg class="bi me-2" width="40" height="32">
-              {/* <use xlinkHref="/xyzbootstrap"></use> */}
             </svg>
             <span class="fs-4">CSE-AI</span>
           </a>
